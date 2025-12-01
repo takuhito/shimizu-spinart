@@ -1,5 +1,7 @@
 # NotebookLM 動画生成自動化アプリ (NotebookLM Video Generator)
 
+[![Download macOS App](https://img.shields.io/badge/Download-macOS_App-blue?style=for-the-badge&logo=apple)](https://github.com/takuhito/shimizu-spinart-videogenerator/releases/download/v1.0.0/shimizu-spinart-1.0.0-arm64.dmg)
+
 Google NotebookLM を使用して、ブログ記事のURLから動画解説（Video Overview）を自動生成・ダウンロードするツールです。
 Mac用デスクトップアプリとしてパッケージ化されています。
 

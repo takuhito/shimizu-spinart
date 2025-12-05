@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="<mt:Contents content_type=" サイト基本情報" limit="1">
+    <mt:ContentField content_field="ロゴ画像">
+        <$mt:AssetURL$>
+    </mt:ContentField>
+    </mt:Contents>" type="image/x-icon">
+    <meta name="description" content="<mt:ContentField content_field=" 執筆者">
+    <mt:ContentFieldValue language="ja">
+        </mt:ContentField>「<mt:ContentField content_field="連載記事タイトル">
+            <mt:ContentFieldValue language="ja">
+        </mt:ContentField>
+        」をSpinart（スピナート）の連載記事でチェック！　あらゆるジャンルのインディーズアーティストの創作・表現・プロモーションを支援する…それが「Spinart（スピナート）」。インディーズアーティスト紹介、アートに関するさまざまな視点からの連載記事、そして「Spinart（スピナート）」ならではの各種サービスを展開します。アーティスト紹介ページ掲載アーティスト募集中。無料！">
+        <meta name="keywords" content="<mt:Contents content_type=" サイト基本情報" limit="1">
+        <mt:ContentField content_field="metaキーワード">
+            <$mt:ContentFieldValue language="ja" $>
+        </mt:ContentField>
+        </mt:Contents>">
+        <title>
+            <mt:ContentField content_field="連載記事タイトル">
+                <mt:ContentFieldValue language="ja">
+            </mt:ContentField> : <mt:ContentField content_field="執筆者">
+                <mt:ContentFieldValue language="ja">
+            </mt:ContentField> : 連載記事 : <mt:Contents content_type="サイト基本情報" limit="1">
+                <mt:ContentField content_field="サイト名">
+                    <$mt:ContentFieldValue language="ja" $>
+                </mt:ContentField>
+            </mt:Contents>
+        </title>
+
+        <!-- ★head記述 https://spinart-2cbg.movabletype.biz/mt/admin?__mode=view&_type=template&id=61&blog_id=1 -->
+        <!--#include virtual="/inc/meta-head.html" -->
+
+        <style>
+            a.btn {
+                white-space: normal;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- ★ヘッダ https://spinart-2cbg.movabletype.biz/mt/admin?__mode=view&_type=template&id=60&blog_id=1 -->
+    <!--#include virtual="/inc/head.html" -->
+
+    <mt:Ignore>
+        <!-- ★メイン画像-トップ以外 https://spinart-2cbg.movabletype.biz/mt/admin?__mode=view&_type=template&id=72&blog_id=1 -->
+        <!--#include virtual="/inc/img-etc.html" -->
+    </mt:Ignore>
+
+    <!-- メイン画像 ============================================================ -->
+    <div class="container">
+        <a href="<mt:ContentField content_field=" 連載記事ヘッダ画像リンク">
+            <mt:ContentFieldValue>
+                <mt:Else>
+                    <mt:Contents content_type="執筆者" limit="1">
+                        <mt:ContentField content_field='執筆者ヘッダ画像リンク'>
+                            <mt:ContentFieldValue>
+                        </mt:ContentField>
+                    </mt:Contents>
+                    </mt:ContentField>" target="_blank">
+                    <img src="<mt:ContentField content_field='連載記事ヘッダ画像'><mt:AssetURL><mt:Else><mt:Contents content_type="
+                        執筆者" limit="1">
+                    <mt:ContentField content_field="執筆者ヘッダ画像">
+                        <mt:AssetURL>
+                    </mt:ContentField>
+                    </mt:Contents>
+                    </mt:ContentField>" class="img-fluid w-100" alt="" />
+        </a>
+    </div>
+    <!-- //メイン画像 ============================================================ -->
+
+    <section class="container" id="categorytitle">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mt-4 h4"><img src="/images/logo-mark.png" class="logo-mark" alt="Logo Mark" />連載記事</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amazon -->
+    <section class="banner mt-4" id="banner01">
+        <div class="container d-none d-md-block"><!--#include virtual="/inc/amazon-a.html" --></div>
+        <div class="container d-block d-md-none"><!--#include virtual="/inc/amazon-2p-a.html" --></div>
+    </section>
+    <!-- //Amazon -->
+
+    <mt:Ignore>
+        <section class="banner mt-4" id="banner01">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <mt:Contents content_type="広告バナー" limit="2" field:917e27bd40d273243784a94be134005d4a7731bd="etc01">
+                        <div class="col-md-4">
+                            <mt:Include module="★A8バナー">
+                        </div>
+                    </mt:Contents>
+                </div>
+            </div>
+        </section>
+    </mt:Ignore>
+
+    <!-- 記事 -->
+    <section class="news-block contents" id="newslist">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <!-- 記事 -->
+                <div class="col-md-10 mt-4">
+                    <p class="entrydate">
+                        <mt:ContentDate format="%Y/%m/%d">
+                    </p>
+                    <h3 class="mt-0">
+                        <img src="/images/logo-mark.png" class="logo-mark" alt="Logo Mark" /><span
+                            class="mr-2 badge badge-secondary">
+                            <mt:ContentField content_field="執筆者">
+                                <mt:ContentField content_field="連載タイトル">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </mt:ContentField>
+                        </span>
+                        <mt:ContentField content_field="連載記事タイトル">
+                            <mt:ContentFieldValue language="ja">
+                        </mt:ContentField>
+                    </h3>
+                    <div class="media" style="clear:both;">
+                        <img src="<mt:ContentField content_field=" 連載記事画像">
+                        <mt:AssetURL>
+                            </mt:ContentField>" class="align-self-center mb-3 img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-10 mt-3 kiji-block">
+
+                    <div class="float-right col-md-3 mb-3 d-none d-md-block">
+                        <div class="card">
+                            <img src="<mt:ContentField content_field=" 執筆者">
+                            <mt:ContentField content_field="顔写真">
+                                <$mt:AssetThumbnailURL square="1" width="500" $>
+                            </mt:ContentField>
+                            </mt:ContentField>" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <mt:ContentField content_field="執筆者">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h5>
+                                <div class="card-text mb-3 small" style="line-height: 1.2em;">
+                                    <mt:ContentField content_field="執筆者">
+                                        <mt:ContentField content_field="プロフィール">
+                                            <mt:ContentFieldValue language="ja" trim_to="100+...">
+                                        </mt:ContentField>
+                                    </mt:ContentField>
+                                </div>
+                                <a href="<mt:ContentField content_field=" 執筆者">
+                                    <mt:ContentPermalink>
+                                        </mt:ContentField>" class="btn btn-primary btn-block">続きを読む
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <mt:ContentField content_field="連載記事メインテキスト">
+                        <mt:ContentFieldValue language="ja">
+                    </mt:ContentField>
+                </div>
+
+                <div class="col-md-10" style="clear: both;">
+
+                    <mt:ContentField content_field="コラム01-タイトル">
+                        <div class="row d-flex justify-content-center my-5">
+                            <!-- コラム01ビデオ分岐 -->
+                            <mt:If tag="ContentField" content_field="コラム01-ビデオLong">
+                                <mt:ContentField content_field="コラム01-ビデオLong">
+                                    <div class="col-md-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <mt:ContentFieldValue />
+                                        </div>
+                                    </div>
+                                </mt:ContentField>
+                                <mt:Else>
+                                    <mt:If tag="ContentField" content_field="コラム01-ビデオ">
+                                        <mt:ContentField content_field="コラム01-ビデオ">
+                                            <div class="col-md-6">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <mt:ContentFieldValue />
+                                                </div>
+                                            </div>
+                                        </mt:ContentField>
+                                        <mt:Else>
+                                            <mt:ContentField content_field="コラム01-画像">
+                                                <div class="col-md-6"><img src="<mt:AssetURL>"
+                                                        class="img-fluid w-100 mb-3" /></div>
+                                            </mt:ContentField>
+                                    </mt:If>
+                            </mt:If>
+                            <!-- //コラム01ビデオ分岐 -->
+                            <div class="col">
+                                <h4>
+                                    <mt:ContentField content_field="コラム01-タイトル">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h4>
+                                <mt:ContentField content_field="コラム01-テキスト">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </div>
+                        </div>
+                    </mt:ContentField>
+
+                    <mt:ContentField content_field="コラム02-タイトル">
+                        <div class="row d-flex justify-content-center my-5">
+                            <!-- コラム02ビデオ分岐 -->
+                            <mt:If tag="ContentField" content_field="コラム02-ビデオLong">
+                                <mt:ContentField content_field="コラム02-ビデオLong">
+                                    <div class="col-md-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <mt:ContentFieldValue />
+                                        </div>
+                                    </div>
+                                </mt:ContentField>
+                                <mt:Else>
+                                    <mt:If tag="ContentField" content_field="コラム02-ビデオ">
+                                        <mt:ContentField content_field="コラム02-ビデオ">
+                                            <div class="col-md-6">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <mt:ContentFieldValue />
+                                                </div>
+                                            </div>
+                                        </mt:ContentField>
+                                        <mt:Else>
+                                            <mt:ContentField content_field="コラム02-画像">
+                                                <div class="col-md-6"><img src="<mt:AssetURL>"
+                                                        class="img-fluid w-100 mb-3" /></div>
+                                            </mt:ContentField>
+                                    </mt:If>
+                            </mt:If>
+                            <!-- //コラム02ビデオ分岐 -->
+                            <div class="col">
+                                <h4>
+                                    <mt:ContentField content_field="コラム02-タイトル">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h4>
+                                <mt:ContentField content_field="コラム02-テキスト">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </div>
+                        </div>
+                    </mt:ContentField>
+
+                    <mt:ContentField content_field="コラム03-タイトル">
+                        <div class="row d-flex justify-content-center my-5">
+                            <!-- コラム03ビデオ分岐 -->
+                            <mt:If tag="ContentField" content_field="コラム03-ビデオLong">
+                                <mt:ContentField content_field="コラム03-ビデオLong">
+                                    <div class="col-md-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <mt:ContentFieldValue />
+                                        </div>
+                                    </div>
+                                </mt:ContentField>
+                                <mt:Else>
+                                    <mt:If tag="ContentField" content_field="コラム03-ビデオ">
+                                        <mt:ContentField content_field="コラム03-ビデオ">
+                                            <div class="col-md-6">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <mt:ContentFieldValue />
+                                                </div>
+                                            </div>
+                                        </mt:ContentField>
+                                        <mt:Else>
+                                            <mt:ContentField content_field="コラム03-画像">
+                                                <div class="col-md-6"><img src="<mt:AssetURL>"
+                                                        class="img-fluid w-100 mb-3" /></div>
+                                            </mt:ContentField>
+                                    </mt:If>
+                            </mt:If>
+                            <!-- //コラム03ビデオ分岐 -->
+                            <div class="col">
+                                <h4>
+                                    <mt:ContentField content_field="コラム03-タイトル">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h4>
+                                <mt:ContentField content_field="コラム03-テキスト">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </div>
+                        </div>
+                    </mt:ContentField>
+
+                    <mt:ContentField content_field="コラム04-タイトル">
+                        <div class="row d-flex justify-content-center my-5">
+                            <!-- コラム04ビデオ分岐 -->
+                            <mt:If tag="ContentField" content_field="コラム04-ビデオLong">
+                                <mt:ContentField content_field="コラム04-ビデオLong">
+                                    <div class="col-md-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <mt:ContentFieldValue />
+                                        </div>
+                                    </div>
+                                </mt:ContentField>
+                                <mt:Else>
+                                    <mt:If tag="ContentField" content_field="コラム04-ビデオ">
+                                        <mt:ContentField content_field="コラム04-ビデオ">
+                                            <div class="col-md-6">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <mt:ContentFieldValue />
+                                                </div>
+                                            </div>
+                                        </mt:ContentField>
+                                        <mt:Else>
+                                            <mt:ContentField content_field="コラム04-画像">
+                                                <div class="col-md-6"><img src="<mt:AssetURL>"
+                                                        class="img-fluid w-100 mb-3" /></div>
+                                            </mt:ContentField>
+                                    </mt:If>
+                            </mt:If>
+                            <!-- //コラム04ビデオ分岐 -->
+                            <div class="col">
+                                <h4>
+                                    <mt:ContentField content_field="コラム04-タイトル">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h4>
+                                <mt:ContentField content_field="コラム04-テキスト">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </div>
+                        </div>
+                    </mt:ContentField>
+
+                    <mt:ContentField content_field="コラム05-タイトル">
+                        <div class="row d-flex justify-content-center my-5">
+                            <!-- コラム05ビデオ分岐 -->
+                            <mt:If tag="ContentField" content_field="コラム05-ビデオLong">
+                                <mt:ContentField content_field="コラム05-ビデオLong">
+                                    <div class="col-md-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <mt:ContentFieldValue />
+                                        </div>
+                                    </div>
+                                </mt:ContentField>
+                                <mt:Else>
+                                    <mt:If tag="ContentField" content_field="コラム05-ビデオ">
+                                        <mt:ContentField content_field="コラム05-ビデオ">
+                                            <div class="col-md-6">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <mt:ContentFieldValue />
+                                                </div>
+                                            </div>
+                                        </mt:ContentField>
+                                        <mt:Else>
+                                            <mt:ContentField content_field="コラム05-画像">
+                                                <div class="col-md-6"><img src="<mt:AssetURL>"
+                                                        class="img-fluid w-100 mb-3" /></div>
+                                            </mt:ContentField>
+                                    </mt:If>
+                            </mt:If>
+                            <!-- //コラム05ビデオ分岐 -->
+                            <div class="col">
+                                <h4>
+                                    <mt:ContentField content_field="コラム05-タイトル">
+                                        <mt:ContentFieldValue language="ja">
+                                    </mt:ContentField>
+                                </h4>
+                                <mt:ContentField content_field="コラム05-テキスト">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </div>
+                        </div>
+                    </mt:ContentField>
+
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="float-right col-md-3 mb-3 d-block d-md-none">
+                    <div class="card">
+                        <img src="<mt:ContentField content_field=" 執筆者">
+                        <mt:ContentField content_field="顔写真">
+                            <$mt:AssetThumbnailURL square="1" width="500" $>
+                        </mt:ContentField>
+                        </mt:ContentField>" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <mt:ContentField content_field="執筆者">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>
+                            </h5>
+                            <div class="card-text mb-3 small" style="line-height: 1.2em;">
+                                <mt:ContentField content_field="執筆者">
+                                    <mt:ContentField content_field="プロフィール">
+                                        <mt:ContentFieldValue language="ja" trim_to="100+...">
+                                    </mt:ContentField>
+                                </mt:ContentField>
+                            </div>
+                            <a href="<mt:ContentField content_field=" 執筆者">
+                                <mt:ContentPermalink>
+                                    </mt:ContentField>" class="btn btn-primary btn-block">続きを読む
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 関連記事ブロック -->
+    <section class="mt-4" id="relation-box">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="col-md-4 mb-3 mx-auto">
+                            <h4 class="h5 mb-0">
+                                <mt:Ignore>
+                                    <mt:ContentField content_field="執筆者">
+                                        <mt:ContentID>
+                                    </mt:ContentField>-
+                                </mt:Ignore>
+                                <mt:ContentField content_field="執筆者">
+                                    <mt:ContentFieldValue language="ja">
+                                </mt:ContentField>の他の記事
+                            </h4>
+                            <mt:ContentField content_field="執筆者">
+                                <mt:ContentID setvar="cid">
+                            </mt:ContentField>
+                            <mt:Contents content_type="連載記事" limit="10"
+                                field:06bf162bed8cf67962dd938ba876a478d757ddd0="$cid">
+                                <mt:ContentsHeader>
+                                    <ul class="list-group list-group-flush">
+                                </mt:ContentsHeader>
+                                <li class="list-group-item" style="line-height:1em;"><small><a
+                                            href="<mt:ContentPermalink>"><i
+                                                class="far fa-chevron-double-right mr-1"></i>
+                                            <mt:ContentField content_field="連載記事タイトル">
+                                                <mt:ContentFieldValue language="ja">
+                                            </mt:ContentField>
+                                        </a><span class="badge badge-light ml-2 text-muted">
+                                            <mt:ContentDate format="%Y/%m/%d">
+                                        </span></small></li>
+                                <mt:ContentsFooter>
+                                    </ul>
+                                </mt:ContentsFooter>
+                            </mt:Contents>
+                            <p class="text-right"><a href="<mt:ContentField content_field=" 執筆者">
+                                    <mt:ContentPermalink>
+                                        </mt:ContentField>#writer-entry-list" class="btn btn-outline-link
+                                        btn-sm"><small><i class="far fa-chevron-double-right mr-1"></i>以前の記事</small>
+                                </a></p>
+                        </div>
+
+                        <div class="col-md-4 mb-3 d-none">
+                            <h4 class="h5 mb-0">関連記事</h4>
+                            <p class="small">準備中</p>
+                        </div>
+
+                        <div class="col-md-4 mb-3 mx-auto">
+                            <h4 class="h5 mb-0">おすすめ記事</h4>
+                            <mt:Contents content_type="連載記事" limit="10"
+                                field:a60fe8e310d0f9600eb8eb74facf1a31bf217dc4="on">
+                                <mt:ContentsHeader>
+                                    <ul class="list-group list-group-flush">
+                                </mt:ContentsHeader>
+                                <li class="list-group-item" style="line-height:1em;"><small><a
+                                            href="<mt:ContentPermalink>"><i
+                                                class="far fa-chevron-double-right mr-1"></i>
+                                            <mt:ContentField content_field="連載記事タイトル">
+                                                <mt:ContentFieldValue language="ja">
+                                            </mt:ContentField>
+                                        </a><span class="badge badge-light ml-2 text-muted">
+                                            <mt:ContentDate format="%Y/%m/%d">
+                                        </span></small></li>
+                                <mt:ContentsFooter>
+                                    </ul>
+                                </mt:ContentsFooter>
+                            </mt:Contents>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /関連記事ブロック -->
+
+    <!-- Amazon -->
+    <section class="banner mt-4 d-block d-md-none" id="banner01">
+        <div class="container"><!--#include virtual="/inc/amazon-2p-b.html" --></div>
+    </section>
+    <!-- //Amazon -->
+
+    <mt:Ignore>
+        <section class="banner mt-4" id="banner04">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <mt:Contents content_type="広告バナー" limit="2" field:917e27bd40d273243784a94be134005d4a7731bd="etc02">
+                        <div class="col-md-4">
+                            <mt:Include module="★A8バナー">
+                        </div>
+                    </mt:Contents>
+                </div>
+            </div>
+        </section>
+    </mt:Ignore>
+
+
+    <!-- ★フッタ https://spinart-2cbg.movabletype.biz/mt/admin?__mode=view&_type=template&id=63&blog_id=1 -->
+    <!--#include virtual="/inc/foot.html" -->
+
+
+    <!-- ★foot記述 https://spinart-2cbg.movabletype.biz/mt/admin?__mode=view&_type=template&id=62&blog_id=1 -->
+    <!--#include virtual="/inc/meta-foot.html" -->
+
+</body>
+
+</html>

@@ -9,7 +9,6 @@
 ## 修正内容
 
 ### 対象ファイル
-### 対象ファイル
 - [☆連載記事年度別ナビゲーション.mtml](file:///Users/takuhito/Library/CloudStorage/Dropbox-Design/%E8%97%A4%E7%94%B0%E6%8B%93%E4%BA%BA/%E2%98%85%E2%98%85%E2%98%85Antigravity-Dev/shimizu-Spinart/20260104-Spinart-mt-template/%E2%98%86%E9%80%A3%E8%BC%89%E8%A8%98%E4%BA%8B%E5%B9%B4%E5%BA%A6%E5%88%A5%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.mtml)
 
 ### 実装のポイント

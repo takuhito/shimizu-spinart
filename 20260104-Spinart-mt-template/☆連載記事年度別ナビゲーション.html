@@ -1,0 +1,26 @@
+<mt:Ignore><!-- ボタン形式（将来的な切り替え用として残す場合） -->
+  <div class="col-12 mt-5 mb-5 text-center">
+    <div class="btn-group" role="group">
+      <mt:ArchiveList type="Yearly">
+        <a href="/contents/<$mt:ArchiveTitle$>/" class="btn btn-primary">
+          <$mt:ArchiveTitle$>年
+        </a>
+      </mt:ArchiveList>
+    </div>
+  </div>
+</mt:Ignore>
+
+<!-- 年度別ナビゲーション（ドロップダウン形式） -->
+<div class="col-12 mt-5 mb-5 text-center">
+  <div class="dropdown">
+    <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">年度別</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <mt:ArchiveList type="Yearly">
+        <a class="dropdown-item small" href="/contents/<$mt:ArchiveTitle$>/">
+          <$mt:ArchiveTitle$>年
+        </a>
+      </mt:ArchiveList>
+    </div>
+  </div>
+</div>

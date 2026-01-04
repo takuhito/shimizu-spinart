@@ -9,13 +9,14 @@
 ## 修正内容
 
 ### 対象ファイル
-- [☆連載記事年度別ナビゲーション.html](file:///Users/takuhito/Library/CloudStorage/Dropbox-Design/%E8%97%A4%E7%94%B0%E6%8B%93%E4%BA%BA/%E2%98%85%E2%98%85%E2%98%85Antigravity-Dev/shimizu-Spinart/20260104-Spinart-mt-template/%E2%98%86%E9%80%A3%E8%BC%89%E8%A8%98%E4%BA%8B%E5%B9%B4%E5%BA%A6%E5%88%A5%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html)
+### 対象ファイル
+- [☆連載記事年度別ナビゲーション.mtml](file:///Users/takuhito/Library/CloudStorage/Dropbox-Design/%E8%97%A4%E7%94%B0%E6%8B%93%E4%BA%BA/%E2%98%85%E2%98%85%E2%98%85Antigravity-Dev/shimizu-Spinart/20260104-Spinart-mt-template/%E2%98%86%E9%80%A3%E8%BC%89%E8%A8%98%E4%BA%8B%E5%B9%B4%E5%BA%A6%E5%88%A5%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.mtml)
 
 ### 実装のポイント
 1.  **動的な年度取得**: `<mt:ArchiveList type="Yearly">` を使用。
 2.  **デザインの保持**: Bootstrap の構造を維持。
-3.  **フォーマッタ対策**: エディタの自動整形によるスペース挿入を防ぐため、`mt:ArchiveDate` の `setvar` 属性を使用して変数に値を格納し、URLや表示を組み立てる手法を採用しました。これにより、自動整形の影響を受けずに正しいパス（`/contents/2026/`）が生成されます。
-4.  **再構築エラーの防止**: `mt:ArchiveLink` を使わず直接パスを生成。
+4.  **フォーマッタ対策**: エディタの自動整形によるスペース挿入を防ぐため、ファイルを `.mtml` 拡張子に変更し、プロジェクト設定（`.vscode/settings.json`）で保存時の自動整形を無効化しています。
+5.  **再構築エラーの防止**: `mt:ArchiveLink` を使わず直接パスを生成。
 
 ## 使用方法
 

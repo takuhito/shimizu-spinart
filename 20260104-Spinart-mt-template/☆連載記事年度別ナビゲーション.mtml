@@ -2,11 +2,9 @@
   <div class="col-12 mt-5 mb-5 text-center">
     <div class="btn-group" role="group">
       <mt:ArchiveList type="Yearly">
-        <mt:ArchiveDate format="%Y" setvar="y">
-          <mt:SetVarBlock name="u" trim="1">/contents/<mt:Var name="y">/</mt:SetVarBlock>
-          <a href="<mt:Var name='u'>" class="btn btn-primary">
-            <mt:Var name="y">年
-          </a>
+        <a href="/contents/<$mt:ArchiveDate format="%Y"$>/" class="btn btn-primary">
+          <$mt:ArchiveDate format="%Y" $>年
+        </a>
       </mt:ArchiveList>
     </div>
   </div>
@@ -19,11 +17,9 @@
       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">年度別</a>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
       <mt:ArchiveList type="Yearly">
-        <mt:ArchiveDate format="%Y" setvar="y">
-          <mt:SetVarBlock name="u" trim="1">/contents/<mt:Var name="y">/</mt:SetVarBlock>
-          <a class="dropdown-item small" href="<mt:Var name='u'>">
-            <mt:Var name="y">年
-          </a>
+        <a class="dropdown-item small" href="/contents/<$mt:ArchiveDate format="%Y"$>/">
+          <$mt:ArchiveDate format="%Y" $>年
+        </a>
       </mt:ArchiveList>
     </div>
   </div>
